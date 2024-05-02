@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <title>Sapper</title>
+</head>
+
+<body oncontextmenu="return false">
+
+  <div id="settings">
+    <p>Ширина: <input type="number" id="width" value="30"></p>
+    <p>Высота: <input type="number" id="height" value="16"></p>
+    <p>Кол-во бомб: <input type="number" id="bombValue" value="99"></p>
+    <button type="button" id="new-game">Новая игра</button>
+  </div>
+
+  <div id="game">
+
+    <div class="header">
+      <p id="bomb"></p>
+      <div id="smilePos">
+        <div id="smile"></div>
+      </div>
+      <p id="time">000</p>
+    </div>
+
+    <div id="field"></div>
+  </div>
+  <p id="record"></p>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
