@@ -146,7 +146,10 @@ class Board {
           if (this.cells[x][y] instanceof MinedCell) {
             for (let j = 0; j < this.height; j++) {
               for (let k = 0; k < this.width; k++) {
-                if (y != j && x != k && this.cells[k][j] instanceof MinedCell) {
+                if (
+                  (y != j || x != k) &&
+                  this.cells[k][j] instanceof MinedCell
+                ) {
                   this.cells[k][j].showBomb();
                 }
                 if (
